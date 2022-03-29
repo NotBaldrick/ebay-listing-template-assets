@@ -439,8 +439,20 @@ h1,
   h4,
   h5,
   h6 {
-  font-family: "Lobster Two", cursive;
+  font-family: "Lobster Two", cursive !important;
   font-weight: 700;
+}
+
+span,
+  strong,
+  b,
+  i,
+  abbr,
+  sub,
+  sup,
+  em,
+  u {
+  font-family: inherit !important;
 }
 
 h1 {
@@ -476,6 +488,7 @@ h6 {
 p {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-family: "Roboto Slab", serif !important;
 }
 
 hr {
@@ -563,10 +576,6 @@ hr {
   pointer-events: none;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -647,14 +656,6 @@ hr {
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-md {
